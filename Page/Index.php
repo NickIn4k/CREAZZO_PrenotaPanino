@@ -45,7 +45,7 @@
                         <option value="VsCommunity-3">Pane VsCommunity - 3€</option>
                     </select><br><br>
 
-                    <img src="../imgs/buns.png" alt="Immagine Panini" class="img-panini" id="img-panini"><br><br>
+                    <img src="../imgs/buns/buns.png" alt="Immagine Panini" class="img-panini" id="img-panini"><br><br>
 
                     <!-- Scelta Ingredienti -->
                     <!-- Sistema di div annidiati per usare la CSS grid -->
@@ -56,7 +56,7 @@
                             <input type="checkbox" id="ingrediente1" name="ingrediente[]" value="Lettuce-0.3">
                             <label for="ingrediente1">Lattuga (+0.30€)</label>
                         </div>
-                        <img src="../imgs/lettuce.png" alt="Lattuga" class="icon-ingrediente">
+                        <img src="../imgs/ingredients/lettuce.png" alt="Lattuga" class="icon-ingrediente">
                     </div>
 
                     <div class="ingrediente">
@@ -64,7 +64,7 @@
                             <input type="checkbox" id="ingrediente2" name="ingrediente[]" value="Tomato-0.3">
                             <label for="ingrediente2">Pomodoro (+0.30€)</label>
                         </div>
-                        <img src="../imgs/tomato.png" alt="Pomodoro" class="icon-ingrediente">
+                        <img src="../imgs/ingredients/tomato.png" alt="Pomodoro" class="icon-ingrediente">
                     </div>
 
                     <div class="ingrediente">
@@ -72,7 +72,7 @@
                             <input type="checkbox" id="ingrediente3" name="ingrediente[]" value="Cheese-0.3">
                             <label for="ingrediente3">Formaggio (+0.30€)</label>
                         </div>
-                        <img src="../imgs/cheese.png" alt="Formaggio" class="icon-ingrediente">
+                        <img src="../imgs/ingredients/cheese.png" alt="Formaggio" class="icon-ingrediente">
                     </div>
 
                     <div class="ingrediente">
@@ -80,7 +80,7 @@
                             <input type="checkbox" id="ingrediente4" name="ingrediente[]" value="Bacon-0.5">
                             <label for="ingrediente4">Bacon (+0.50€)</label>
                         </div>
-                        <img src="../imgs/bacon.png" alt="Bacon" class="icon-ingrediente">
+                        <img src="../imgs/ingredients/bacon.png" alt="Bacon" class="icon-ingrediente">
                     </div>
 
                     <div class="ingrediente">
@@ -88,7 +88,7 @@
                             <input type="checkbox" id="ingrediente5" name="ingrediente[]" value="Onion-0.8">
                             <label for="ingrediente5">Onion rings (+0.80€)</label>
                         </div>
-                        <img src="../imgs/onion.png" alt="Onion rings" class="icon-ingrediente">
+                        <img src="../imgs/ingredients/onion.png" alt="Onion rings" class="icon-ingrediente">
                     </div>
 
                     <!-- Invio e Reset -->
