@@ -1,10 +1,3 @@
-/* Reset di base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Corpo pagina */
 body {
     font-family: Arial, sans-serif;
@@ -14,7 +7,7 @@ body {
 
 /*h1*/
 h1 {
-    font-size: 3rem;              
+    font-size: 3rem;              /* rem = multipli di px (1 rem = 16 px) */
     font-weight: 900;             
     text-transform: uppercase;    
     color: #ffffff;
@@ -34,6 +27,7 @@ header {
     color: white;
     padding: 10px 0;
     background-image: url('../imgs/logo.png');
+    /* Ripetizione solo orizzontale */
     background-repeat: repeat-x;
     background-position: center top;
     background-size: auto;
@@ -41,7 +35,7 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Spazio tra logo e link */
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
@@ -54,7 +48,7 @@ header {
 }
 
 .nav-links {
-    display: flex;
+    display: flex;  /* Allinea orizzontalmente i link */
     gap: 10px;
 }
 
@@ -63,7 +57,7 @@ header {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s;    /* Transizione morbida sullo sfondo */
 }
 
 .nav-links button:hover {
@@ -118,7 +112,7 @@ form {
     margin: 40px auto;
     padding: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);   /* rgba = rgb + trasparenza */
 }
 
 /* Titolo del form */
@@ -126,7 +120,7 @@ form h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: uppercase;          /* Trasformazione automatica del testo in maiuscolo */
     letter-spacing: 1px;
 }
 
@@ -137,15 +131,14 @@ form label {
     font-weight: bold;
 }
 
-/* INPUT, SELECT e TEXTAREA */
+/* INPUT e  SELECT*/
 form input[type="text"],
 form input[type="email"],
 form input[type="password"],
 form input[type="number"],
 form input[type="date"],
 form input[type="datetime-local"],
-form select,
-form textarea {
+form select{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -154,10 +147,10 @@ form textarea {
     background-color: #666;
     color: #fff;
     font-size: 1rem;
-    transition: background 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, box-shadow 0.3s;   /* Transizione sullo sfondo + creazione ombra */
 }
 
-/* Effetto al focus */
+/* Effetto al focus => Hover ma all'onclick */
 form input:focus,
 form select:focus,
 form textarea:focus {
@@ -196,10 +189,39 @@ form input[type="reset"]:hover {
 }
 
 .img-panini {
-    display: block;           /* Permette di usare margin auto */
-    margin: 5px auto;        /* Centra orizzontalmente */
-    width: 250px;             /* Larghezza fissa */
-    height: 250px;            /* Altezza fissa */
+    display: block;           
+    margin: 5px auto;        
+    width: 250px;             
+    height: 250px;            
     object-fit: cover;
-    border-radius: 10px;      /* Angoli arrotondati */
+    border-radius: 10px;      
+}
+
+/* Ogni ingrediente è una riga con 2 colonne */
+/* Tabella con CSS Grid */
+.ingrediente {
+    display: grid;
+    grid-template-columns: 1fr 120px; /* testo a sinistra, immagine a destra */
+    align-items: center; /* centra verticalmente tutto */
+    gap: 20px; /* spazio tra testo e immagine */
+    width: 100%;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc; /* separatore al posto di <hr> */
+    padding-bottom: 10px;
+}
+
+/* Checkbox + testo */
+.info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+/* Immagine a destra */
+.icon-ingrediente {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    justify-self: end; /* spinge l’immagine a destra */
 }
