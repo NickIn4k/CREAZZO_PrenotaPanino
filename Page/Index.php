@@ -4,8 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sceta panino</title>
-        <link rel="stylesheet" href="../Style/Base.CSS">
+        <title>Scelta panino</title>
+        <link rel="stylesheet" href="../Style/Base.css">
     </head>
     <body>
 
@@ -33,6 +33,19 @@
                     <!--Data e Ora-->
                     <label for="dataOra">Data e Ora di ritiro:</label>
                     <input type="datetime-local" id="dataOra" name="dataOra" required><br><br>
+
+                    <!-- Scelta Pane -->
+                    <label for="pane">Scegli il tipo di pane:</label>
+                    <select id="pane" name="pane" oninput="changePicture(this)" required>
+                        <option value="" disabled selected>-- Seleziona il tipo di  pane --</option>
+                        <option value="XAMPP">Pane XAMPP</option>   
+                        <option value="XMIND">Pane XMIND</option>
+                        <option value="IntelliJ">Pane IntelliJ</option>
+                        <option value="VsCode">Pane VsCode</option>
+                        <option value="VsCommunity">Pane VsCommunity</option>
+                    </select><br><br>
+
+                    <img src="../imgs/logo2.png" alt="Immagine Panini" class="img-panini" id="img-panini"><br><br>
 
                     <!-- Invio e Reset -->
                     <input type="submit" value="Invia">

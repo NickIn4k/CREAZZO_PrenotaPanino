@@ -12,4 +12,9 @@ function controlloNome(input){
     }
 }
 
+function changePicture(input){
+    const img = document.getElementById("img-panini");
+    img.src = "../imgs/"+input.value+".png";
+}
+
 window.onload = getToday;

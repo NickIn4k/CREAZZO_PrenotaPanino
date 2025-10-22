@@ -195,3 +195,11 @@ form input[type="reset"]:hover {
     transform: scale(1.05);
 }
 
+.img-panini {
+    display: block;           /* Permette di usare margin auto */
+    margin: 5px auto;        /* Centra orizzontalmente */
+    width: 250px;             /* Larghezza fissa */
+    height: 250px;            /* Altezza fissa */
+    object-fit: cover;
+    border-radius: 10px;      /* Angoli arrotondati */
+}
