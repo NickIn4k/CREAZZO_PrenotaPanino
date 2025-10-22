@@ -1,0 +1,197 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/*h1*/
+h1 {
+    font-size: 3rem;              
+    font-weight: 900;             
+    text-transform: uppercase;    
+    color: #ffffff;
+    background-color: #555;
+    padding:5px;
+    border-radius: 5px;                
+    text-align: center;           
+    letter-spacing: 2px;          
+    margin: 20px 0;               
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); 
+}
+
+
+/* HEADER & NAVBAR */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    background-image: url('../imgs/logo.png');
+    background-repeat: repeat-x;
+    background-position: center top;
+    background-size: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links button {
+    background-color: #555;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-links button:hover {
+    background-color: #777;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Immagine logo */
+.logo-img {
+    height: 100px;     
+    width: auto;       
+    margin-right: 1px; 
+    border-radius: 5px; 
+}
+
+/* FORM GENERALE */
+form {
+    background-color: #444;        /* Colore coerente con header/nav */
+    color: #fff;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Titolo del form */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ETICHETTE */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* INPUT, SELECT e TEXTAREA */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form input[type="datetime-local"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Effetto al focus */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    background-color: #777;
+    outline: none;
+    box-shadow: 0 0 5px #00bfff;
+}
+
+/* RADIO & CHECKBOX */
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+/* BOTTONI DEL FORM */
+form button,
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin: 10px auto 0;
+}
+
+form button:hover,
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #777;
+    transform: scale(1.05);
+}
+
