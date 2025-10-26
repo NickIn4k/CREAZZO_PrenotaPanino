@@ -20,4 +20,20 @@ function changePicture(input, nomeImg){
         img.src = "../imgs/buns/"+input.value+".png";
 }
 
+function controllaFidelity(){
+    const username = document.getElementById("username");
+    const password = document.getElementById("password");
+
+    if(username.value.trim() !== "")
+        password.required = true;
+    else
+        password.required = false;
+
+    if(password.value.trim() !== "")
+        username.required = true;
+    else
+        username.required = false;
+
+}
+
 window.onload = getToday;

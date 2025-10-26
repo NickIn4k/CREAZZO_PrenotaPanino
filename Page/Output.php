@@ -1,4 +1,7 @@
-<!-- RISULTATI FINALI -->
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="it">
     <head>
