@@ -1,0 +1,19 @@
+
+###############################################
+Ordine di: poldo sbaffini
+Data e Ora di ritiro: 2025-10-23T22:53
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XAMPP	3
+ingrediente	Tomato, Cheese, Bacon	0.3, 0.3, 0.5
+dimensione	Grande	2
+contorno	Anelli	1.8
+bibita	CocaCola	2
+
+
+Totale Ordine		12.9
+Sconto Fidelity (20%)		2.58
+Totale da Pagare		10.32

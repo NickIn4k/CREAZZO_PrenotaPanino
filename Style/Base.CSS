@@ -225,3 +225,66 @@ form input[type="reset"]:hover {
     object-fit: contain;
     justify-self: end; /* spinge l’immagine a destra */
 }
+
+.logo-img-footer {
+    height: 250px;     
+    width: auto;    
+    margin-bottom: 10px;   
+}
+
+/* CSS TABELLA DI CHATGPT (DA COMMENTARE - STUDIARE)*/
+
+/* TABELLA RIEPILOGO ORDINE */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* INTESTAZIONE */
+table th {
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* CELLE */
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* RIGHE ALTERNATE */
+table tr:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+/* HOVER SULLA RIGA */
+table tr:hover {
+    background-color: #dcdcdc;
+}
+
+/* RIGA FINALE (Totale) */
+.total-row td {
+    font-weight: bold;
+    background-color: #555;
+    color: #fff;
+    text-align: right;
+}
+
+/* CENTRARE I COSTI */
+table td:last-child {
+    text-align: right;
+}

@@ -45,7 +45,7 @@
                 </form>
                 <?php
                     if($_SERVER['REQUEST_METHOD'] == 'POST') {
-                        $contenuto = file_get_contents("../Access.txt");
+                        $contenuto = file_get_contents("../txt/Access.txt");
 
                         $username = $_POST['username'] ?? null;
                         $password = $_POST['password'] ?? null;
@@ -79,6 +79,7 @@
 
         <footer>
             <p>&copy; 2025 "La panineria dei programmatori". Tutti i diritti riservati.</p>
+            <img src="../imgs/capyburger.png" alt="capybara" class="logo-img-footer">
             <p>Progettato e sviluppato da Creazzo Nicola</p>
         </footer>
 

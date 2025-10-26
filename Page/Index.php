@@ -10,7 +10,7 @@
             'ingrediente'=> $_POST['ingrediente'] ?? [],
             'dimensione' => $_POST['dimensione'] ?? '',
             'contorno'   => $_POST['contorno'] ?? '',
-            'bibita'     => $_POST['bibita'] ?? []
+            'bibita'     => $_POST['bibita'] ?? ''
         ];
 
         // Reindirizza alla pagina di output
@@ -196,6 +196,7 @@
 
         <footer>
             <p>&copy; 2025 "La panineria dei programmatori". Tutti i diritti riservati.</p>
+            <img src="../imgs/capyburger.png" alt="capybara" class="logo-img-footer">
             <p>Progettato e sviluppato da Creazzo Nicola</p>
         </footer>
 
