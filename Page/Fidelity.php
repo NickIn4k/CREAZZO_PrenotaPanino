@@ -1,37 +1,5 @@
 <?php
     session_start();
-
-    if($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $contenuto = file_get_contents("../Access.txt");
-
-        $username = $_POST['username'] ?? null;
-        $password = $_POST['password'] ?? null;
-
-        $isValida = false;
-
-        if($username != null){
-            $righe = explode("\n", $contenuto);
-            foreach($righe as $riga){
-                $lista = explode(";", trim($riga));
-                if($username==$lista[0] && $password==$lista[1]){
-                    $isValida = true;
-                    break;
-                }
-            }
-
-            if($isValida){
-                $_SESSION['form2'] = [
-                    'username' => $_POST['username'] ?? '',
-                    'password' => $_POST['password'] ?? ''
-                ];
-                echo "<p style='color: green; font-weight: bold;'>Accesso effettuato con successo! Lo sconto verrà applicato al checkout.</p>";
-            } else {
-                echo "<p style='color: red; font-weight: bold;'>Credenziali non valide. Riprova oppure procedi senza Fidelity e-card.</p>";
-            }
-        }
-    }
-
-    var_dump($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -75,6 +43,37 @@
                     <input type="reset" value="Resetta">
                     <button type="button" onclick="window.location.href='Output.php'">Salta</button>
                 </form>
+                <?php
+                    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+                        $contenuto = file_get_contents("../Access.txt");
+
+                        $username = $_POST['username'] ?? null;
+                        $password = $_POST['password'] ?? null;
+
+                        $isValida = false;
+
+                        if($username != null){
+                            $righe = explode("\n", $contenuto);
+                            foreach($righe as $riga){
+                                $lista = explode(";", trim($riga));
+                                if($username==$lista[0] && $password==$lista[1]){
+                                    $isValida = true;
+                                    break;
+                                }
+                            }
+
+                            if($isValida){
+                                $_SESSION['form2'] = [
+                                    'username' => $_POST['username'] ?? '',
+                                    'password' => $_POST['password'] ?? ''
+                                ];
+                                echo "<p style='color: green; font-weight: bold;'>Accesso effettuato con successo! Lo sconto verrà applicato al checkout.</p>";
+                            } else {
+                                echo "<p style='color: red; font-weight: bold;'>Credenziali non valide. Riprova oppure procedi senza Fidelity e-card.</p>";
+                            }
+                        }
+                    }
+                ?>
             </section>
         </main>
 

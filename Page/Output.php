@@ -30,7 +30,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2025 "La panineria dei programmatori". Tutti i diritti riservati.</p><br>
+            <p>&copy; 2025 "La panineria dei programmatori". Tutti i diritti riservati.</p>
             <p>Progettato e sviluppato da Creazzo Nicola</p>
         </footer>
 
