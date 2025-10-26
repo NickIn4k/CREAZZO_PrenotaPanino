@@ -36,7 +36,7 @@
 
                     <!-- Scelta Pane -->
                     <label for="pane">Scegli il tipo di pane:</label>
-                    <select id="pane" name="pane" oninput="changePicture(this)" required>
+                    <select id="pane" name="pane" oninput="changePicture(this, 'img-panini')" required>
                         <option value="" disabled selected>-- Seleziona il tipo di  pane --</option>
                         <option value="XAMPP-3">Pane XAMPP - 3€</option>   
                         <option value="XMIND-5">Pane XMIND - 5€</option>
@@ -90,6 +90,68 @@
                         </div>
                         <img src="../imgs/ingredients/onion.png" alt="Onion rings" class="icon-ingrediente">
                     </div>
+
+                    <!-- Dimensione del panino -->
+                    <label>Dimensione del panino:</label><br>
+                    <div class="info">
+                        <input type="radio" id="piccolo" name="dimensione" value="Piccolo-0" required>
+                        <label for="piccolo">Piccolo (base)</label>
+                    </div>
+                    <div class="info">
+                        <input type="radio" id="medio" name="dimensione" value="Medio-1">
+                        <label for="medio">Medio (+1.00€)</label>
+                    </div>
+                    <div class="info">
+                        <input type="radio" id="grande" name="dimensione" value="Grande-2">
+                        <label for="grande">Grande (+2.00€)</label>
+                    </div><br>
+
+                    <!-- Contorno -->
+                    <label for="contorno">Scegli il contorno:</label><br>
+                    <select id="contorno" name="contorno" oninput="changePicture(this, 'img-contorni')" required>
+                        <option value="" disabled selected>-- Seleziona il contorno --</option>
+                        <option value="Nessuno-0">Nessuno (0€)</option>
+                        <option value="Patatine-1.5">Patatine fritte (+1.50€)</option>
+                        <option value="Anelli-1.8">Anelli di cipolla (+1.80€)</option>
+                        <option value="Insalata-1">Insalata mista (+1.00€)</option>
+                    </select><br><br>
+
+                    <img src="../imgs/Nessuno-0.png" alt="Immagine Contorni" class="img-panini" id="img-contorni"><br><br>
+
+                    <!-- Scelta Bibita -->
+                    <label>Scegli la tua bibita:</label><br>
+
+                    <div class="ingrediente">
+                        <div class="info">
+                            <input type="radio" id="acqua" name="bibita" value="Acqua-1">
+                            <label for="acqua">Acqua naturale o frizzante (+1.00€)</label>
+                        </div>
+                        <img src="../imgs/Acqua-1.png" alt="Onion rings" class="icon-ingrediente">
+                    </div>
+                    
+                    <div class="ingrediente">
+                        <div class="info">
+                            <input type="radio" id="coca" name="bibita" value="CocaCola-2">
+                            <label for="coca">Coca-Cola (+2.00€)</label>
+                        </div>
+                        <img src="../imgs/CocaCola-2.png" alt="Onion rings" class="icon-ingrediente">
+                    </div>
+
+                    <div class="ingrediente">
+                        <div class="info">
+                            <input type="radio" id="fanta" name="bibita" value="Fanta-2">
+                            <label for="fanta">Fanta (+2.00€)</label>
+                        </div>
+                        <img src="../imgs/Fanta-2.png" alt="Onion rings" class="icon-ingrediente">
+                    </div>
+
+                    <div class="ingrediente">
+                        <div class="info">
+                            <input type="radio" id="poretti" name="bibita" value="BirraPoretti-3">
+                            <label for="poretti">Birra Poretti (+3.00€)</label>
+                        </div>
+                        <img src="../imgs/BirraPoretti-3.png" alt="Onion rings" class="icon-ingrediente">
+                    </div><br>
 
                     <!-- Invio e Reset -->
                     <input type="submit" value="Invia">

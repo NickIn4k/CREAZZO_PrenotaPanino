@@ -12,9 +12,12 @@ function controlloNome(input){
     }
 }
 
-function changePicture(input){
-    const img = document.getElementById("img-panini");
-    img.src = "../imgs/buns/"+input.value+".png";
+function changePicture(input, nomeImg){
+    const img = document.getElementById(nomeImg);
+    if(nomeImg === 'img-contorni')
+        img.src = "../imgs/"+input.value+".png";
+    else
+        img.src = "../imgs/buns/"+input.value+".png";
 }
 
 window.onload = getToday;
