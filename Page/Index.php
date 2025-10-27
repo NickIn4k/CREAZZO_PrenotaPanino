@@ -2,6 +2,7 @@
     session_start();
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        unset($_SESSION['form1']);
         // Salvo i dati del form di Index.php nelle variabili di sessione
         $_SESSION['form1'] = [
             'nominativo' => $_POST['nominativo'] ?? '',

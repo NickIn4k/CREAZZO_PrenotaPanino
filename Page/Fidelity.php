@@ -63,6 +63,7 @@
                             }
 
                             if($isValida){
+                                unset($_SESSION['form2']);
                                 $_SESSION['form2'] = [
                                     'username' => $_POST['username'] ?? '',
                                     'password' => $_POST['password'] ?? ''
