@@ -1,6 +1,6 @@
 function getToday(){
     const today = new Date().toISOString().slice(0,16);
-    document.getElementById("dataOra").setAttribute("max", today);
+    document.getElementById("dataOra").setAttribute("min", today);
     console.log(today);
 }
 
