@@ -1,7 +1,11 @@
 <?php
     session_start();
-?>
 
+    /* DEBUG COOKIE
+    $dati = json_decode($_COOKIE["DatiPanino"], true);
+    echo "dati: ". var_dump($dati);
+    */
+?>
 <!DOCTYPE html>
 <html lang="it">
     <head>
@@ -14,12 +18,13 @@
 
         <header>
             <nav class="navbar">
-                <a href="https://youtu.be/dn7qsrc_h_4?si=qcj88SIO4GW6rAxd" target="_blank"><img src="../imgs/logo2.png" alt="Logo Panineria" class="logo-img"></a>
-                <h1 class="logo">La panineria dei programmatori</h1>
+                <a href="https://youtu.be/dn7qsrc_h_4?si=qcj88SIO4GW6rAxd" target="_blank"><img src="../imgs/capyburger.png" alt="capybara" class="logo-img"></a>
                 <div class="nav-links">
                     <button><a href="Index.php">Home</a></button>
                     <button><a href="Fidelity.php">Servizi</a></button>
                     <button><a href="Output.php">Ordine</a></button>
+                    <button><a href="Reset.php">Reset</a></button>
+                    <button><a href="Elimina.php">Elimina</a></button>
                 </div>
             </nav>
         </header>
@@ -108,9 +113,14 @@
                 }
             ?>
 
+            <!-- Count delle visite (non legate ad un utente specifico) -->
+            <?php
+            
+            ?>
+
             <!-- stampa su file con php -->
             <?php
-                // Ripetizione di codice, migliorabile in futuro (versione di base per scarso tempo) 
+                // Ripetizione di codice, migliorabile in futuro (versione di base) 
                 $txt = "Voce\t\tDettagli\t\tCosto (€)\n";
                 $txt .= "Hamburger\tCarne bovina\t3.0\n";
 
@@ -149,6 +159,7 @@
                 fwrite($file, "Data e Ora di ritiro: " . ($_SESSION['form1']['dataOra']) . "\n");
                 fwrite($file, "\n-----------------------\n\n");
                 fwrite($file, $txt);
+                fclose($file);
             ?>
         </main>
 

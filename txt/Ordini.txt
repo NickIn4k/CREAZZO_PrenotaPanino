@@ -150,3 +150,185 @@ bibita	BirraPoretti	3
 Totale Ordine		14.7
 Sconto Fidelity (20%)		2.94
 Totale da Pagare		11.76
+
+###############################################
+Ordine di: Creazzo Nicola
+Data e Ora di ritiro: 2025-12-25T12:13
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XMIND	5
+ingrediente	Lettuce, Cheese, Onion	0.3, 0.3, 0.8
+dimensione	Medio	1
+contorno	Insalata	1
+bibita	CocaCola	2
+
+
+Totale Ordine		13.4
+
+###############################################
+Ordine di: Creazzo Nicola
+Data e Ora di ritiro: 2025-12-25T12:13
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XMIND	5
+ingrediente	Lettuce, Cheese, Onion	0.3, 0.3, 0.8
+dimensione	Medio	1
+contorno	Insalata	1
+bibita	CocaCola	2
+
+
+Totale Ordine		13.4
+
+###############################################
+Ordine di: Creazzo Nicola
+Data e Ora di ritiro: 2025-12-25T12:13
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XMIND	5
+ingrediente	Lettuce, Cheese, Onion	0.3, 0.3, 0.8
+dimensione	Medio	1
+contorno	Insalata	1
+bibita	CocaCola	2
+
+
+Totale Ordine		13.4
+
+###############################################
+Ordine di: Creazzo Nicola
+Data e Ora di ritiro: 2025-12-25T12:13
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XMIND	5
+ingrediente	Lettuce, Cheese, Onion	0.3, 0.3, 0.8
+dimensione	Medio	1
+contorno	Insalata	1
+bibita	CocaCola	2
+
+
+Totale Ordine		13.4
+
+###############################################
+Ordine di: Creazzo Nicola
+Data e Ora di ritiro: 2025-12-25T12:13
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XMIND	5
+ingrediente	Lettuce, Cheese, Onion	0.3, 0.3, 0.8
+dimensione	Medio	1
+contorno	Insalata	1
+bibita	CocaCola	2
+
+
+Totale Ordine		13.4
+
+###############################################
+Ordine di: Creazzo Nicola
+Data e Ora di ritiro: 2025-12-25T12:13
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XMIND	5
+ingrediente	Lettuce, Cheese, Onion	0.3, 0.3, 0.8
+dimensione	Medio	1
+contorno	Insalata	1
+bibita	CocaCola	2
+
+
+Totale Ordine		13.4
+
+###############################################
+Ordine di: Creazzo Nicola
+Data e Ora di ritiro: 2025-12-25T12:13
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XMIND	5
+ingrediente	Lettuce, Cheese, Onion	0.3, 0.3, 0.8
+dimensione	Medio	1
+contorno	Insalata	1
+bibita	CocaCola	2
+
+
+Totale Ordine		13.4
+
+###############################################
+Ordine di: Creazzo Nicola
+Data e Ora di ritiro: 2025-12-25T12:13
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XMIND	5
+ingrediente	Lettuce, Cheese, Onion	0.3, 0.3, 0.8
+dimensione	Medio	1
+contorno	Insalata	1
+bibita	CocaCola	2
+
+
+Totale Ordine		13.4
+
+###############################################
+Ordine di: Creazzo Nicola
+Data e Ora di ritiro: 2025-12-25T12:13
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XMIND	5
+ingrediente	Lettuce, Cheese, Onion	0.3, 0.3, 0.8
+dimensione	Medio	1
+contorno	Insalata	1
+bibita	CocaCola	2
+
+
+Totale Ordine		13.4
+
+###############################################
+Ordine di: Creazzo Nicola
+Data e Ora di ritiro: 2025-12-25T12:13
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+pane	XMIND	5
+ingrediente	Lettuce, Cheese, Onion	0.3, 0.3, 0.8
+dimensione	Medio	1
+contorno	Patatine	1.5
+bibita	CocaCola	2
+
+
+Totale Ordine		13.9
+
+###############################################
+Ordine di: 
+Data e Ora di ritiro: 
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+
+
+Totale Ordine		3

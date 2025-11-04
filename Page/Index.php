@@ -1,6 +1,14 @@
 <?php
     session_start();
 
+    if(!isset($_COOKIE['contVisite'])) {
+        setcookie('contVisite', 1, time() + 86400*30, '/');
+        $visite = 1;
+    } else {
+        $visite = $_COOKIE['contVisite'] + 1;
+        setcookie('contVisite', $visite, time() + 86400*30, '/');
+    }
+
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         unset($_SESSION['form1']);
         // Salvo i dati del form di Index.php nelle variabili di sessione
@@ -14,9 +22,10 @@
             'bibita'     => $_POST['bibita'] ?? ''
         ];
 
+        setcookie("DatiPanino", json_encode($_SESSION['form1']), time() + 86400*7, "/");
+
         // Reindirizza alla pagina di output
         header('Location: Fidelity.php');
-        exit();
     }
 ?>
 
@@ -32,17 +41,19 @@
 
         <header>
             <nav class="navbar">
-                <a href="https://youtu.be/dn7qsrc_h_4?si=qcj88SIO4GW6rAxd" target="_blank"><img src="../imgs/logo2.png" alt="Logo Panineria" class="logo-img"></a>
-                <h1 class="logo">La panineria dei programmatori</h1>
+                <a href="https://youtu.be/dn7qsrc_h_4?si=qcj88SIO4GW6rAxd" target="_blank"><img src="../imgs/capyburger.png" alt="capybara" class="logo-img"></a>
                 <div class="nav-links">
                     <button><a href="Index.php">Home</a></button>
                     <button><a href="Fidelity.php">Servizi</a></button>
                     <button><a href="Output.php">Ordine</a></button>
+                    <button><a href="Reset.php">Reset</a></button>
+                    <button><a href="Elimina.php">Elimina</a></button>
                 </div>
             </nav>
         </header>
 
         <main>
+            <h1 class="logo">La panineria dei programmatori</h1>
             <section id="home"> 
                 <form action="<?= htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
                     <h2>Benvenuto nella panineria dei programmatori online!</h2>
@@ -196,6 +207,7 @@
         </main>
 
         <footer>
+            <?= isset($_COOKIE['contVisite']) ? "<p>Pagina visitata " . $_COOKIE['contVisite'] . " volte 😁 </p>" : "" ?>
             <p>&copy; 2025 "La panineria dei programmatori". Tutti i diritti riservati.</p>
             <img src="../imgs/capyburger.png" alt="capybara" class="logo-img-footer">
             <p>Progettato e sviluppato da Creazzo Nicola</p>
