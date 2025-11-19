@@ -1,6 +1,8 @@
 function getToday(){
     const today = new Date().toISOString().slice(0,16);
-    document.getElementById("dataOra").setAttribute("min", today);
+    const picker = document.getElementById("dataOra")
+    if(picker != null)
+        picker.setAttribute("min", today);
     console.log(today);
 }
 
@@ -34,6 +36,19 @@ function controllaFidelity(){
     else
         username.required = false;
 
+}
+
+function switchMode(mode) {
+    const loginFields = document.getElementById("loginFields");
+    const signupFields = document.getElementById("signupFields");
+
+    if (mode === "login") {
+        loginFields.style.display = "block";
+        signupFields.style.display = "none";
+    } else {
+        loginFields.style.display = "none";
+        signupFields.style.display = "block";
+    }
 }
 
 window.onload = getToday;

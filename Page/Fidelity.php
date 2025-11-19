@@ -35,7 +35,7 @@
                     value="<?= (isset($_SESSION['form2']['username'])) ? htmlspecialchars($_SESSION['form2']['username']): '' ?>"><br><br>
 
                     <!-- Password -->
-                    <label for="password">Password Fidelity e-card:</label>
+                    <label for="password">Codice sconto:</label>
                     <input type="password" id="password" name="password" onchange="controllaFidelity()"
                     value="<?= (isset($_SESSION['form2']['password'])) ? htmlspecialchars($_SESSION['form2']['password']): '' ?>"><br><br>
 
