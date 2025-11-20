@@ -1,6 +1,19 @@
 <?php
     session_start();
 
+    $ap1 = $_SESSION['form1']['nominativo'] ?? "";
+    $ap2 = $_SESSION['form1']['email'] ?? "";
+    $ap3 = $_SESSION['form2']['password'] ?? null;
+
+    // Gestione mysqli
+    $conn = new mysqli("Localhost","root",""."db_accessi_panineria");
+
+    $sql = "INSERT INTO utenti2 (nominativo, email, cod_sconto) VALUES ('$nominativo', '$email', $password');";
+    if($conn->query($sql) === TRUE)
+        echo "Dati inseriti nel db";
+
+    $conn->close();
+
     /* DEBUG COOKIE
     $dati = json_decode($_COOKIE["DatiPanino"], true);
     echo "dati: ". var_dump($dati);
@@ -23,6 +36,7 @@
                     <button><a href="Index.php">Home</a></button>
                     <button><a href="Fidelity.php">Servizi</a></button>
                     <button><a href="Output.php">Ordine</a></button>
+                    <button><a href="Login.php">Login</a></button>
                     <button><a href="Reset.php">Reset</a></button>
                     <button><a href="Elimina.php">Elimina</a></button>
                 </div>

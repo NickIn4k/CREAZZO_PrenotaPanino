@@ -46,6 +46,7 @@
                     <button><a href="Index.php">Home</a></button>
                     <button><a href="Fidelity.php">Servizi</a></button>
                     <button><a href="Output.php">Ordine</a></button>
+                    <button><a href="Login.php">Login</a></button>
                     <button><a href="Reset.php">Reset</a></button>
                     <button><a href="Elimina.php">Elimina</a></button>
                 </div>
