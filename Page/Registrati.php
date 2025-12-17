@@ -23,64 +23,15 @@
         </header>
 
         <main>
-            <div id="msg"></div>
+            <div id="msgR"></div>
 
-            <form id="loginForm">
+            <form id="registerForm">
                 <h1>Login</h1>
-
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
                 <label for="pwd">Password:</label>
                 <input type="password" id="pwd" name="pwd" required>
-
-                <input type="submit">
-                <input type="reset">
-            </form>
-
-           <script>
-                document.getElementById("loginForm").addEventListener("submit", function(e) {
-                    e.preventDefault(); // blocca il submit classico
-
-                    let xhr = new XMLHttpRequest();
-                    let formData = new FormData(this);
-
-                    xhr.open("POST", "Login_ajax.php", true);
-
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState === 4 && xhr.status === 200) {
-                            let response = JSON.parse(xhr.responseText);
-
-                            let msg = document.getElementById("msg");
-                            msg.style.color = response.success ? "green" : "red";
-                            msg.innerText = response.message;
-
-                            if (response.success) {
-                                document.getElementById("loginForm").reset();
-                                window.location.href = "Index.php";
-                            }
-                        }
-                    };
-
-                    xhr.send(formData);
-                });
-            </script>
-
-            <div id="msgR"></div>
-
-            <form id="registerForm">
-                <h1>Registrati</h1>
-                <label for="nominativo">Nominativo:</label>
-                <input type="text" id="nominativo" name="nominativo" required>
-                
-                <label for="emailR">Email:</label>
-                <input type="email" id="emailR" name="emailR" required>
-
-                <label for="pwdR1">Password:</label>
-                <input type="password" id="pwdR1" name="pwdR1" required>
-
-                <label for="pwdR2">Reimmetti la password:</label>
-                <input type="password" id="pwdR2" name="pwdR2" required>
 
                 <input type="submit">
                 <input type="reset">

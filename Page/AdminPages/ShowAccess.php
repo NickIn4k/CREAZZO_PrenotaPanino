@@ -8,20 +8,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ricerca utenti</title>
-        <link rel="stylesheet" href="../Style/Base.css">
+        <link rel="stylesheet" href="../../Style/Base.css">
     </head>
     <body>
 
         <header>
             <nav class="navbar">
-                <a href="https://youtu.be/dn7qsrc_h_4?si=qcj88SIO4GW6rAxd" target="_blank"><img src="../imgs/capyburger.png" alt="capybara" class="logo-img"></a>
+                <a href="https://youtu.be/dn7qsrc_h_4?si=qcj88SIO4GW6rAxd" target="_blank"><img src="../../imgs/capyburger.png" alt="capybara" class="logo-img"></a>
                 <div class="nav-links">
-                    <button><a href="Index.php">Home</a></button>
-                    <button><a href="Fidelity.php">Servizi</a></button>
-                    <button><a href="Output.php">Ordine</a></button>
-                    <button><a href="Login.php">Login</a></button>
-                    <button><a href="Reset.php">Reset</a></button>
-                    <button><a href="Elimina.php">Elimina</a></button>
+                    <button><a href="../Index.php">Home</a></button>
+                    <button><a href="../Fidelity.php">Servizi</a></button>
+                    <button><a href="../Output.php">Ordine</a></button>
+                    <button><a href="../Login.php">Login</a></button>
+                    <button><a href="../Reset.php">Reset</a></button>
+                    <button><a href="../Elimina.php">Elimina</a></button>
                 </div>
             </nav>
         </header>
@@ -132,9 +132,9 @@
 
         <footer>
             <p>&copy; 2025 "La panineria dei programmatori". Tutti i diritti riservati.</p>
-            <img src="../imgs/capyburger.png" alt="capybara" class="logo-img-footer">
+            <img src="../../imgs/capyburger.png" alt="capybara" class="logo-img-footer">
             <p>Progettato e sviluppato da Creazzo Nicola</p>
         </footer>
     </body>
-    <script type="text/javascript" src= "../Script/Library.js"></script>
+    <script type="text/javascript" src= "../../Script/Library.js"></script>
 </html>

@@ -1,6 +1,11 @@
 <?php
     session_start();
 
+    if(!$_SESSION['logged_in']){
+        header('Location: Login.php');
+        exit;
+    }
+
     if(!isset($_COOKIE['contVisite'])) {
         setcookie('contVisite', 1, time() + 86400*30, '/');
         $visite = 1;
@@ -23,6 +28,20 @@
         ];
 
         setcookie("DatiPanino", json_encode($_SESSION['form1']), time() + 86400*7, "/");
+
+        $conn = new mysqli("localhost", "root", "", "db_panini_prenotati");
+
+        if($conn->connect_error)
+            die("Connessione fallita!");
+
+        $ingredienti = implode(", ", $_POST['ingrediente']);
+        $sql = "INSERT INTO tipoPanini (pane, ingredienti, dimensione, contorno, bibita) VALUES (?,?,?,?,?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("sssss", $_POST['pane'], $ingredienti, $_POST['dimensione'], $_POST['contorno'], $_POST['bibita']);
+        $stmt->execute();
+
+        $stmt->close();
+        $conn->close();
 
         // Reindirizza alla pagina di output
         header('Location: Fidelity.php');

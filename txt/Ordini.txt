@@ -332,3 +332,15 @@ Hamburger	Carne bovina	3.0
 
 
 Totale Ordine		3
+
+###############################################
+Ordine di: 
+Data e Ora di ritiro: 
+
+-----------------------
+
+Voce		Dettagli		Costo (€)
+Hamburger	Carne bovina	3.0
+
+
+Totale Ordine		3
